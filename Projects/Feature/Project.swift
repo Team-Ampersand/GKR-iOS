@@ -1,11 +1,12 @@
 import ProjectDescription
 import ProjectDescriptionHelpers
+import MyPlugin
 
 let project = Project.makeModule(
     name: "Feature",
     product: .staticFramework,
     dependencies: [
-        .project(target: "Service", path: .relativeToRoot("Service"))
+        .Projcet.Service
     ],
     resources: ["Resources/**"]
 )

@@ -1,10 +1,11 @@
 import ProjectDescription
 import ProjectDescriptionHelpers
+import MyPlugin
 
 let project = Project.makeModule(
     name: "Service",
     product: .staticFramework,
     dependencies: [
-        .project(target: "ThirdPartyLib", path: .relativeToRoot("ThirdPartyLib"))
+        .Projcet.ThirdPartyLib
     ]
 )
